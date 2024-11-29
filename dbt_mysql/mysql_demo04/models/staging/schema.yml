@@ -1,0 +1,57 @@
+
+version: 2
+
+models:
+  - name: stg_product
+    columns:
+      - name: size
+        description: ' ' 
+      - name: class
+        description: ' ' 
+      - name: color
+        description: ' ' 
+      - name: style
+        description: ' ' 
+      - name: weight
+        description: ' ' 
+      - name: rowguid
+        description: ' ' 
+      - name: listprice
+        description: ' ' 
+      - name: productid
+        description: ' ' 
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: productline
+        description: ' ' 
+      - name: productname
+        description: ' ' 
+      - name: sellenddate
+        description: ' ' 
+      - name: modifieddate
+        description: ' ' 
+      - name: reorderpoint
+        description: ' ' 
+      - name: standardcost
+        description: ' ' 
+      - name: productnumber
+        description: ' ' 
+      - name: sellstartdate
+        description: ' ' 
+      - name: productmodelid
+        description: ' ' 
+      - name: discontinueddate
+        description: ' ' 
+      - name: safetystocklevel
+        description: ' ' 
+      - name: daystomanufacture
+        description: ' ' 
+      - name: sizeunitmeasurecode
+        description: ' ' 
+      - name: productsubcategoryid
+        description: ' ' 
+      - name: weightunitmeasurecode
+        description: ' ' 
+           

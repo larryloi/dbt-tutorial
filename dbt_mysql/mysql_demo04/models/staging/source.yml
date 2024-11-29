@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: src
+    schema: classicmodels
+    database: classicmodels
+
+    tables:
+      - name: products
+        identifier: products
+      - name: productlines
+        identifier: productlines

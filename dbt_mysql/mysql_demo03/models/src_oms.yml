@@ -1,0 +1,46 @@
+sources:
+  - name: src
+    database: classicmodels
+    schema: classicmodels
+    freshness:
+      warn_after:
+        count: 13
+        period: hour
+      error_after:
+        count: 24
+        period: hour
+    loaded_at_field: orderDate
+
+    tables:
+      - name: ord
+        identifier: orders
+      - name: odtl
+        identifier: orderdetails
+      - name: cust
+        identifier: customers
+        columns:
+          - name: customerName
+            tests:
+              - string_not_empty
+              - unique
+              - not_null
+      - name: pdt
+        identifier: products
+      - name: pdtln
+        identifier: productlines
+
+  - name: ods
+    database: demo03_ods
+    schema: demo03_ods
+    tables: 
+      - name: cust
+        identifier: stg_customers
+      - name: ord
+        identifier: stg_orders
+      - name: pdt
+        identifier: stg_products
+      - name: pdtln
+        identifier: stg_productlines
+      - name: odtl
+        identifier: stg_orderdetails
+

@@ -1,0 +1,6 @@
+
+version: 2
+
+models:
+  - name: dim_dates
+    description: "Dim table in ods"

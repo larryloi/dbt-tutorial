@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: contains address information for the customers.
+  - name: dim_dates
+    description: contains address information for the customers.
